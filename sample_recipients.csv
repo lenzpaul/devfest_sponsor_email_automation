@@ -1,4 +1,5 @@
 contact_name,company_name,your_name,your_position,your_contact_info,address_to,text_form,language,recipient_email
-John Doe,ABC Tech,Alice Smith,Event Coordinator,alice@gdgmontreal.com,contact,short,en,lenztpaul@gmail.com
-Marie Dupont,XYZ Solutions,Bob Johnson,Sponsorship Manager,bob@gdgmontreal.com,company,long,fr,lenztpaul@gmail.com
-Ahmed Ali,Global Innovations,Charlie Brown,Community Lead,charlie@gdgmontreal.com,contact,short,en,lenztpaul@gmail.com
+John Doe,ABC Tech,Lenz Paul,GDG Organizer,lenz@fluttermtl.dev,contact,short,en,lenztpaul@gmail.com
+Albert Smith,DEF Tech,Lenz Paul,GDG Organizer,lenz@fluttermtl.dev,company,long,en,lenztpaul@gmail.com
+Melissa Janep,GHI Tech,Lenz Paul,GDG Organizer,lenz@fluttermtl.dev,company,long,fr,lenztpaul@gmail.com
+Marie Dupont,KLM Tech,Lenz Paul,GDG Organizer,lenz@fluttermtl.dev,company,short,fr,lenztpaul@gmail.com

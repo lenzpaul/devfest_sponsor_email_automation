@@ -52,7 +52,9 @@ def read_csv_file(file_path):
 def get_email_content(data):
     address = data['contact_name'] if data['address_to'] == 'contact' else data['company_name']
     
+    # English Email
     if data['language'] == 'en':
+        # English Short form email
         if data['text_form'] == 'short':
             content = f"""
             <html>
@@ -86,6 +88,9 @@ def get_email_content(data):
             </body>
             </html>
             """
+
+            
+        # English Long form email
         else:
             content = f"""
             <html>
@@ -125,8 +130,14 @@ def get_email_content(data):
             </body>
             </html>
             """
+
+
+    # French Email
     else:
-        if data['text_form'] == 'short':
+        
+        # French Short form email
+        ## FIXME LENZ : Long-form French content (not provided in the original document)
+        # if data['text_form'] == 'short':
             content = f"""
             <html>
             <body>
@@ -159,10 +170,11 @@ def get_email_content(data):
             </body>
             </html>
             """
-        else:
-            ## FIXME LENZ : Long-form French content (not provided in the original document)
-            # content = "Long-form French content not provided in the original document."
-            raise ValueError("Long-form French content not provided in the original document.")
+        
+        # French Long form email
+        # else:
+        #     # content = "Long-form French content not provided in the original document."
+        #     raise ValueError("Long-form French content not provided in the original document.")
     
     return content
 
