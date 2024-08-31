@@ -1,4 +1,4 @@
-claude/env
-claude/client_secret.json
-claude/token.json
-claude/.DS_Store
+env
+client_secret.json
+token.json
+.DS_Store

@@ -50,6 +50,8 @@ claude/
     - Go to `APIs & Services` > `Credentials`.
     - Click `Create Credentials` and select `OAuth client ID`.
     - Choose `Desktop app` as the application type.
+    <!-- if the app is not published ensure that the senders are added to testers  -->
+    - If the app is not published, ensure that the senders are added to testers in the OAuth consent screen.
     - Download the client configuration and save it as `client_secret.json` in the [`claude/`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Flenzpaul%2Fdev%2Ftemp%2Fflutter_mtl_email_template%2Fclaude%2F%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%5D "/Users/lenzpaul/dev/temp/flutter_mtl_email_template/claude/") directory.
 
 4. **Update the [`.gitignore`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FUsers%2Flenzpaul%2Fdev%2Ftemp%2Fflutter_mtl_email_template%2F.gitignore%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%5D "/Users/lenzpaul/dev/temp/flutter_mtl_email_template/.gitignore") file:**
