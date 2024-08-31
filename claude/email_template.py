@@ -71,6 +71,11 @@ def get_email_content(data):
     return content
 
 def send_email(recipient, subject, content):
+    ## DEBUG 
+    print("Sending email...")
+    return
+    
+    ### 
     sender_email = input("Enter your Gmail address: ")
     password = getpass("Enter your Gmail password or app password: ")
 
