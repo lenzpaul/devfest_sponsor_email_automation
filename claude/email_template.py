@@ -26,6 +26,10 @@ def get_user_input():
     language = input("Send email in English or French? (en/fr): ").lower()
     recipient_email = input("Enter the recipient's email: ")
     
+    # Optional cc and bcc fields
+    cc_email = input("Enter CC email (optional, leave blank if not applicable): ")
+    bcc_email = input("Enter BCC email (optional, leave blank if not applicable): ")
+    
     return {
         "contact_name": contact_name,
         "company_name": company_name,
@@ -35,7 +39,9 @@ def get_user_input():
         "address_to": address_to,
         "text_form": text_form,
         "language": language,
-        "recipient_email": recipient_email
+        "recipient_email": recipient_email,
+        "cc_email": cc_email,
+        "bcc_email": bcc_email
     }
 
 def read_csv_file(file_path):
@@ -188,17 +194,23 @@ def get_gmail_service():
     
     return build('gmail', 'v1', credentials=creds)
 
-def send_email(service, recipient, subject, content):
+def send_email(service, recipient, subject, content, cc=None, bcc=None):
     message = MIMEMultipart()
     message['to'] = recipient
     message['subject'] = subject
+    if cc:
+        message['cc'] = cc
+    if bcc:
+        message['bcc'] = bcc
     message.attach(MIMEText(content, 'html'))
+    
     raw_message = base64.urlsafe_b64encode(message.as_bytes()).decode('utf-8')
     try:
         service.users().messages().send(userId='me', body={'raw': raw_message}).execute()
         print(f"Email sent successfully to {recipient}")
     except Exception as e:
         print(f"An error occurred while sending the email: {str(e)}")
+
 
 def main():
     parser = argparse.ArgumentParser(description="Send DevFest sponsorship emails")
@@ -211,11 +223,11 @@ def main():
         recipients = read_csv_file(args.csv)
         for recipient in recipients:
             content = get_email_content(recipient)
-            send_email(service, recipient['recipient_email'], f"{recipient['company_name']} and DevFest Montreal", content)
+            send_email(service, recipient['recipient_email'], f"{recipient['company_name']} and DevFest Montreal", content, recipient.get('cc_email'), recipient.get('bcc_email'))
     else:
         data = get_user_input()
         content = get_email_content(data)
-        send_email(service, data['recipient_email'], f"{data['company_name']} and DevFest Montreal", content)
+        send_email(service, data['recipient_email'], f"{data['company_name']} and DevFest Montreal", content, data.get('cc_email'), data.get('bcc_email'))
 
 if __name__ == "__main__":
     main()
