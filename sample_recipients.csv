@@ -1,5 +1,17 @@
 contact_name,company_name,your_name,your_position,your_contact_info,address_to,text_form,language,recipient_email
-John Doe,ABC Tech,Lenz Paul,GDG Organizer,lenz@fluttermtl.dev,contact,short,en,lenztpaul@gmail.com
-Albert Smith,DEF Tech,Lenz Paul,GDG Organizer,lenz@fluttermtl.dev,company,long,en,lenztpaul@gmail.com
-Melissa Janep,GHI Tech,Lenz Paul,GDG Organizer,lenz@fluttermtl.dev,company,long,fr,lenztpaul@gmail.com
-Marie Dupont,KLM Tech,Lenz Paul,GDG Organizer,lenz@fluttermtl.dev,company,short,fr,lenztpaul@gmail.com
+Lenz Paul,Lenz Tech inc.,Lenz Paul,GDG Organizer,lenz@fluttermtl.dev,contact,short,en,lenztpaul@gmail.com
+Lenz Paul,Lenz Tech inc.,Lenz Paul,GDG Organizer,lenz@fluttermtl.dev,company,long,en,lenztpaul@gmail.com
+Lenz Paul,Lenz Tech inc.,Lenz Paul,GDG Organizer,lenz@fluttermtl.dev,company,long,fr,lenztpaul@gmail.com
+Lenz Paul,Lenz Tech inc.,Lenz Paul,GDG Organizer,lenz@fluttermtl.dev,company,short,fr,lenztpaul@gmail.com
+Jhin Lee,Jhin Tech inc.,Lenz Paul,GDG Organizer,lenz@fluttermtl.dev,contact,short,en,leehack@gmail.com
+Jhin Lee,Jhin Tech inc.,Lenz Paul,GDG Organizer,lenz@fluttermtl.dev,company,long,en,leehack@gmail.com
+Jhin Lee,Jhin Tech inc.,Lenz Paul,GDG Organizer,lenz@fluttermtl.dev,company,long,fr,leehack@gmail.com
+Jhin Lee,Jhin Tech inc.,Lenz Paul,GDG Organizer,lenz@fluttermtl.dev,company,short,fr,leehack@gmail.com
+Billy Taing,Billy Tech inc.,Lenz Paul,GDG Organizer,lenz@fluttermtl.dev,contact,short,en,billy@fluttermtl.dev
+Billy Taing,Billy Tech inc.,Lenz Paul,GDG Organizer,lenz@fluttermtl.dev,company,long,en,billy@fluttermtl.dev
+Billy Taing,Billy Tech inc.,Lenz Paul,GDG Organizer,lenz@fluttermtl.dev,company,long,fr,billy@fluttermtl.dev
+Billy Taing,Billy Tech inc.,Lenz Paul,GDG Organizer,lenz@fluttermtl.dev,company,short,fr,billy@fluttermtl.dev
+Ali Yazdi,Ali Tech inc.,Lenz Paul,GDG Organizer,lenz@fluttermtl.dev,contact,short,en,ma.yazdi75@gmail.com
+Ali Yazdi,Ali Tech inc.,Lenz Paul,GDG Organizer,lenz@fluttermtl.dev,company,long,en,ma.yazdi75@gmail.com
+Ali Yazdi,Ali Tech inc.,Lenz Paul,GDG Organizer,lenz@fluttermtl.dev,company,long,fr,ma.yazdi75@gmail.com
+Ali Yazdi,Ali Tech inc.,Lenz Paul,GDG Organizer,lenz@fluttermtl.dev,company,short,fr,ma.yazdi75@gmail.com

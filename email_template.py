@@ -235,11 +235,13 @@ def main():
         recipients = read_csv_file(args.csv)
         for recipient in recipients:
             content = get_email_content(recipient)
-            send_email(service, recipient['recipient_email'], f"{recipient['company_name']} and DevFest Montreal", content, recipient.get('cc_email'), recipient.get('bcc_email'))
+            subject = f"{recipient['company_name']} et DevFest Montreal" if recipient['language'] == 'fr' else f"{recipient['company_name']} and DevFest Montreal"
+            send_email(service, recipient['recipient_email'], subject, content, recipient.get('cc_email'), recipient.get('bcc_email'))
     else:
         data = get_user_input()
         content = get_email_content(data)
-        send_email(service, data['recipient_email'], f"{data['company_name']} and DevFest Montreal", content, data.get('cc_email'), data.get('bcc_email'))
+        subject = f"{data['company_name']} et DevFest Montreal" if data['language'] == 'fr' else f"{data['company_name']} and DevFest Montreal"
+        send_email(service, data['recipient_email'], subject, content, data.get('cc_email'), data.get('bcc_email'))
 
 if __name__ == "__main__":
     main()
