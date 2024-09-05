@@ -161,9 +161,10 @@ The required dependencies are listed in the `requirements.txt` file:
 
     Example:
 
-    ```csv
-    John Doe,ABC Tech,Alice Smith,Event Coordinator,alice@gdgmontreal.com,contact,short,en,johndoe@example.com
-    ```
+  ```csv
+  contact_name,company_name,your_name,your_position,your_contact_info,address_to,text_form,language,recipient_email,cc_email,bcc_email
+  Lenz Paul,Lenz Tech inc.,Lenz Paul,GDG Organizer,lenz@fluttermtl.dev,contact,long,en,lenztpaul@gmail.com,"info@lenzpaul.dev,devfest2024@gdgmontreal.com",,
+  ```
 
 ## Functions
 
